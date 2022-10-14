@@ -1,0 +1,67 @@
+:host {
+    display: flex;
+    margin: 0 0;
+}
+
+.container{
+    max-width: none;
+    margin-top: 0%;
+}
+.col-8{
+    background: url('../../../assets/login_image.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: 0;
+    position: relative;
+    opacity: 90%;
+}
+
+.col {
+    margin: 0%;
+    margin-top: 0%;
+    background-color:#1B1B1B;
+}
+
+.content {
+    margin-top: 25%;
+    padding-bottom: 100%;
+}
+
+p {
+    font-size: 12px;
+}
+
+label{
+    margin-left: 10%;
+}
+
+::placeholder {
+    color: #909090;
+    opacity: 1;
+}
+
+.form-control{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    border:3px solid #A448FF;
+    background-color: #404040;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    background-color: #A448FF;
+    border-radius: 20px;
+}
+
+.register{
+    text-align: center;
+    color: white;
+}

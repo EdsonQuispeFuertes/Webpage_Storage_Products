@@ -1,0 +1,18 @@
+li {
+    margin-left: 30px;
+    display: inline-block;
+    list-style: none;
+    width: 350px;
+}
+
+.sale-price{
+    color: white;
+    font-size: 35px;
+    font-family: 'Times New Roman';
+}
+
+.name{
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+}

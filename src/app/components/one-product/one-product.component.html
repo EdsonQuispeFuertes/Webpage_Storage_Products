@@ -1,0 +1,94 @@
+<li *ngIf="product" data-productid="product._id">
+    <div class="one-product">
+
+        <div id="backdrop" class="modal-backdrop fade" [ngClass]="{ show: showModal }"></div>
+            <div class="modal d-block fade" 
+            [ngClass]="{ show: showModal }"
+            (click)="onClose()"
+            id="listing-dialog" 
+            tabindex="-1" role="dialog" aria-labelledby="modalIdLabel">
+                <div class="modal-dialog modal-xl" role="document" (click)="onDialogClick($event)">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="name">
+                                <h1>{{product._name}}</h1>
+                            </div>
+                            <button type="button"
+                                class="close"
+                                (click)="onClose()"
+                                aria-label="Close"><span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <ngb-carousel>
+                                <ng-template ngbSlide>
+                                    <div class="picsum-img-wrapper">
+                                        <img src= "{{product._image_one}}"
+                                        alt="here there should be a {{product._image_one}}"
+                                        title="{{product._short_description}}">
+                                    </div>
+                                    <div class="carousel-caption">
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <div class="picsum-img-wrapper">
+                                        <img src= "{{product._image_two}}"
+                                        alt="here there should be a {{product._name}}"
+                                        title="{{product._short_description}}">
+                                    </div>
+                                    <div class="carousel-caption">
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <div class="picsum-img-wrapper">
+                                        <img src= "{{product._image_three}}"
+                                        alt="here there should be a {{product._name}}"
+                                        title="{{product._short_description}}">
+                                    </div>
+                                    <div class="carousel-caption">
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <div class="picsum-img-wrapper">
+                                        <img src= "{{product._image_four}}"
+                                        alt="here there should be a {{product._name}}"
+                                        title="{{product._short_description}}">
+                                    </div>
+                                    <div class="carousel-caption">
+                                    </div>
+                                </ng-template> 
+                            </ngb-carousel>
+
+                            <div class="information">
+                                <div>
+                                    <p>{{product._long_description}}</p>
+                                </div>
+                        
+                                <div>
+                                    <p>{{product._dimensions}}</p>
+                                </div>
+                                <div>
+                                    <p>{{product._weight}}</p>
+                                </div>
+                            </div>
+                        
+                            <div class="sale-price">
+                                <p>{{price}} $</p>
+                            </div>
+                        
+                            <div class="quantity">
+                                <p>Cantidad Existente: {{product._quantity}}</p>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                        
+    </div>
+
+      
+</li>
+

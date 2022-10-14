@@ -1,0 +1,24 @@
+<div style="color: white; text-align: center; font-family: Times New Roman; font-size: 55px"> Productos</div>
+<div class="index-page">
+    <div id="home-just-for-you-area" class="_new-home-just-for-you just-for-you util-clearfix">
+        <div class="title" style="color: white; font-size: 32px; font-family: helvética">Productos</div>
+        <div class="product">
+            <ul class="util-clearfix">
+                <li *ngFor = 'let product of products' [class.selected]="product.id_products === idProduct">
+                    <a (click)="onSelect(product)" target="_blank">
+                        <div class="shadow"></div>
+                        <img src="{{product._image_one}}"
+                            width="250"
+                            height="300"
+                            alt="here there should be a {{product._name}}"
+                            style="border-radius: 50px; cursor: pointer;"
+                            title="{{product._short_description}}">
+                    </a>
+                    <div class="name">{{product._name}}</div>
+                    <div class="sale-price">{{ product._price }} $</div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
