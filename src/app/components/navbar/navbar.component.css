@@ -1,0 +1,11 @@
+.navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+.navbar-brand {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
